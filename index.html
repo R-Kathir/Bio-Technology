@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About || BioTechnology</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Home || BioTechnology</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="shared.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+NO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -23,10 +27,10 @@
                 <img src="./assets/stackly-cyan-grad-orig.webp" alt="Logo" class="logo reveal-image">
             </a>
             <nav class="nav-links" id="navMenu">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="nav-active">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Service</a>
-                <a href="contact.html" class="nav-active">Contact</a>
+                <a href="contact.html">Contact</a>
                 <div class="close-btn material-icons" id="closeMenu">close</div>
                 <div class="nav-actions mob-view">
                     <a href="login.html" class="btn btn-gradient">Login</a>
@@ -40,148 +44,560 @@
             </div>
         </div>
     </header>
-    <section class="sub-hero">
-        <div class="sub-hero-bg"></div>
-        <div class="sub-hero-content">
-            <div class="chips dark-chips">
-                <span class="material-icons">mail</span> Contact Us
+    <section class="hero-section">
+        <div class="hero-bg bg-1"></div>
+        <div class="hero-bg bg-2"></div>
+        <div class="hero-bg bg-3"></div>
+
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="chips"><span class="material-icons">bloodtype</span> Precision You Can Trust</div>
+                <h1 class="anim-text-slide" style="--dealy:0.3s">Precision science for <span
+                        class="text-gradient anim-text-slide" style="--dealy:1.6s"> a better tomorrow</span></h1>
+                <p class="anim-focus">We provide reliable laboratory services backed by scientific expertise, advanced
+                    technology, and
+                    strict
+                    quality standards to support accurate research and meaningful discoveries.</p>
+                <div class="hero-stats">
+                    <div class="hero-stats-item" data-aos="fade-up" data-aos-delay="300">
+                        <span class="material-icons">biotech</span>
+                        <div class="stat-info">
+                            <h4>50+</h4>
+                            <p>Patents Filed</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats-item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="material-icons">science</span>
+                        <div class="stat-info">
+                            <h4>Phase III</h4>
+                            <p>Active Trials</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats-item" data-aos="fade-up" data-aos-delay="500">
+                        <span class="material-icons">verified</span>
+                        <div class="stat-info">
+                            <h4>99.9%</h4>
+                            <p>Lab Accuracy</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="404page.html" class="btn btn-primary" data-aos="fade-down">Explore Our Research</a>
             </div>
-            <h1 class="sec-head">Partner with our <span class="text-gradient">clinical experts</span></h1>
-            <p class="sec-desc">Reach out to discuss your specific clinical requirements, request an audit, or initiate
-                a new research
-                partnership.</p>
+            <div class="hero-right">
+                <div class="hero-glass-content" data-aos="fade-up">
+                    <div class="hero-avatars">
+                        <img src="./assets/doc1.webp" alt="Doctor">
+                        <img src="./assets/doc2.webp" alt="Doctor">
+                        <img src="./assets/doc3.webp" alt="Doctor">
+                        <img src="./assets/doc4.webp" alt="Doctor">
+                    </div>
+                    <div class="hero-avatars-content">
+                        <h1>Data Accuracy & Quality</h1>
+                        <p>We maintain the highest standards of data accuracy and quality</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="contact-section">
-        <div class="contact-container">
-
-            <div class="contact-info scroll-reveal" style="--delay: 0.1s;">
-                <h2 class="contact-title sec-head">Get in touch with our <br><span class="text-gradient">laboratory
-                        team</span>
-                </h2>
-                <p class="contact-subtitle sec-desc">Whether you are initiating a clinical trial or requesting an audit,
-                    our
-                    specialists are ready to assist.</p>
-
-                <div class="info-blocks">
-                    <div class="info-item" data-aos="flip-up" data-aos-delay="200">
-                        <div class="info-icon"><span class="material-icons">biotech</span></div>
-                        <div class="info-text">
-                            <h4>Clinical Partnerships</h4>
-                            <a href="404page.html">partners@thestackly.com</a>
-                            <a href="404page.html">+91 9876543210</a>
+    <section class="about reveal-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-img-container">
+                    <div class="about-img">
+                        <img src="./assets/about1.webp" alt="About" loading="lazy" class="reveal-image">
+                    </div>
+                    <div class="about-img2">
+                        <div class="about-overlay-img">
+                            <img src="./assets/doc5.webp" alt="Doctor" loading="lazy" class="reveal-image">
+                            <div class="about-overlay-btn">
+                                <a href="404page.html"><span class="material-icons">play_circle</span></a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="info-item" data-aos="flip-up" data-aos-delay="300">
-                        <div class="info-icon"><span class="material-icons">help_outline</span></div>
-                        <div class="info-text">
-                            <h4>General Inquiries</h4>
-                            <a href="404page.html">info@thestackly.com</a>
-                            <a href="404page.html">+91 9876543210</a>
+                </div>
+                <div class="about-content-container">
+                    <div class="section-header">
+                        <div class="chips dark-chips"><span class="material-icons">bloodtype</span> About our Laboratory
+                        </div>
+                        <h1 class="sec-head">Bridging theory & applied <span class="text-gradient"> scientific
+                                research</span></h1>
+                        <p class="sec-desc">
+                            About Our Laboratory Bridging theory & applied scientific research We take scientific
+                            theories and turn them into real-world solutions. Through accurate
+                            testing, experimentation, and analysis.
+                        </p>
+                    </div>
+                    <div class="about-mission-con">
+                        <div class="about-miss-vis" data-aos="flip-up" data-aos-delay="300">
+                            <div class="about-icon">
+                                <span class="material-icons">flag_circle</span>
+                            </div>
+                            <div class="about-mv-head">Our Mission</div>
+                            <div class="about-mv-desc">Our mission is validate conduct high acuracy experimentation.
+                            </div>
+                        </div>
+                        <div class="about-miss-vis" data-aos="flip-up" data-aos-delay="400">
+                            <div class="about-icon">
+                                <span class="material-icons">diamond</span>
+                            </div>
+                            <div class="about-mv-head">Our Vision</div>
+                            <div class="about-mv-desc">Our vision is validate conduct high acuracy experimentation.
+                            </div>
                         </div>
                     </div>
-
-                    <div class="info-item" data-aos="flip-up" data-aos-delay="400">
-                        <div class="info-icon"><span class="material-icons">location_on</span></div>
-                        <div class="info-text">
-                            <h4>Main Headquarters</h4>
-                            <p>Stackly Phase 1<br>Salem, TN 636001</p>
-                            <a href="404page.html" class="text-link">View on Maps <span
-                                    class="material-icons">arrow_forward</span></a>
+                    <div class="about-actions" data-aos="flip-down">
+                        <a href="404page.html" class="btn-gradient">More about us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services-container">
+                <div class="section-header">
+                    <div class="chips"><span class="material-icons">bloodtype</span> Our Services</div>
+                    <h1 class="sec-head">Excellence in laboratory testing
+                        <span class="text-gradient"> research services</span>
+                    </h1>
+                </div>
+                <div class="services-content-container reveal-section">
+                    <div class="services-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="services-num">01</div>
+                        <div class="services-head">Laboratory Testing</div>
+                        <div class="services-desc">Validated methodologies to ensure accurate and reliable results
+                            across multiple.</div>
+                        <div class="services-img">
+                            <figure>
+                                <img src="./assets/lab1.webp" alt="Lab" class="reveal-image">
+                            </figure>
+                        </div>
+                        <div class="services-action">
+                            <a href="404page.html" class="btn-gradient">Read More</a>
+                        </div>
+                    </div>
+                    <div class="services-card" data-aos="fade-down" data-aos-delay="400">
+                        <div class="services-num">01</div>
+                        <div class="services-head">Laboratory Testing</div>
+                        <div class="services-desc">Validated methodologies to ensure accurate and reliable results
+                            across multiple.</div>
+                        <div class="services-img">
+                            <figure>
+                                <img src="./assets/lab2.webp" alt="Lab" class="reveal-image">
+                            </figure>
+                        </div>
+                        <div class="services-action">
+                            <a href="404page.html" class="btn-gradient">Read More</a>
+                        </div>
+                    </div>
+                    <div class="services-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="services-num">01</div>
+                        <div class="services-head">Laboratory Testing</div>
+                        <div class="services-desc">Validated methodologies to ensure accurate and reliable results
+                            across multiple.</div>
+                        <div class="services-img">
+                            <figure>
+                                <img src="./assets/lqb3.webp" alt="Lab" class="reveal-image">
+                            </figure>
+                        </div>
+                        <div class="services-action">
+                            <a href="404page.html" class="btn-gradient">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="contact-form-wrapper glass-card scroll-reveal" style="--delay: 0.3s;">
-                <form id="clinical-contact-form" class="clinical-form" novalidate>
-
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label for="fullName">Full Name *</label>
-                            <input type="text" id="fullName" placeholder="Dr. Jane Doe" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="workEmail">Work Email *</label>
-                            <input type="email" id="workEmail" placeholder="jane@institution.edu" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label for="company">Institution / Company *</label>
-                            <input type="text" id="company" placeholder="Apex Therapeutics" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="inquiryType">Inquiry Type *</label>
-                            <select id="inquiryType" required>
-                                <option value="" disabled selected>Select an option...</option>
-                                <option value="biomarker">Biomarker Analysis</option>
-                                <option value="genomic">Genomic Sequencing</option>
-                                <option value="audit">Regulatory Audit</option>
-                                <option value="investor">Investor Relations</option>
-                                <option value="other">Other Inquiry</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="message">Project Details *</label>
-                        <textarea id="message" rows="5"
-                            placeholder="Please provide high-level details about your timeline and assay requirements..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-gradient submit-btn">Send Secure Message <span
-                            class="material-icons">send</span></button>
-
-                    <div id="form-status" class="form-status-message"></div>
-                </form>
-            </div>
-
         </div>
     </section>
-    <section class="location">
-        <div class="section-header">
-            <div class="chips"><span class="material-icons">bloodtype</span> Our Location</div>
-            <h1 class="sec-head">Find our laboratory
-                <span class="text-gradient"> Location</span>
-            </h1>
-            <div class="sec-desc">
-                Get in touch with GymPro to learn more about our programs, memberships, and training options. Our team
-                is here to answer your questions and help you take first step
+    <section class="we-do reveal-section">
+        <div class="container">
+            <div class="we-do-container">
+                <div class="we-do-content ">
+                    <div class="section-header">
+                        <div class="chips dark-chips"><span class="material-icons">bloodtype</span>What we do</div>
+                        <h1 class="sec-head">Pioneering research for a <span class="text-gradient"> smarter
+                                future</span></h1>
+                        <p class="sec-desc">We use science and research to create better, smarter solutions for the
+                            future—making life easier, industries stronger, and technology more efficient.</p>
+                    </div>
+                    <div class="we-do-bar">
+                        <div class="progress-wrapper">
+                            <div class="bar-head">
+                                <h2>Safety Compliance</h2>
+                                <p class="data-text">90%</p>
+                            </div>
+
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--target-width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="we-do-stats">
+                        <div class="we-do-item" data-aos="flip-down" data-aos-delay="400">
+                            <span class="material-icons">language</span>
+                            <div class="we-do-con">
+                                <h2>80%</h2>
+                                <p>Global collaboration</p>
+                            </div>
+                        </div>
+                        <div class="we-do-item" data-aos="flip-down" data-aos-delay="500">
+                            <span class="material-icons">support_agent</span>
+                            <div class="we-do-con">
+                                <h2>24/7</h2>
+                                <p>Emergency Support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="we-do-actions">
+                        <a href="404page.html " data-aos="fade-down" class="btn btn-primary">Book Appointment</a>
+                        <a href="404page.html" class="we-do-call" data-aos="fade-up">
+                            <span class="material-icons">call</span>
+                            <div>
+                                <p>Call Us</p>
+                                <span>+91 9876543210</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="we-do-img-con" data-aos="fade" data-aos-delay="300">
+                    <img src="./assets/doc1.webp" alt="Doctor" class="reveal-image">
+                </div>
             </div>
         </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770783!2d78.17140487459903!3d11.68295658852636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1773656950877!5m2!1sen!2sin"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <section class="global-network-section">
-        <div class="network-container text-center scroll-reveal">
+    <section class="choose-us reveal-section">
+        <div class="container">
+            <div class="choose-us-grid">
+                <div class="choose-us-img">
+                    <img src="./assets/choose1.webp" alt="Choose Img" loading="lazy" class="reveal-image">
+                    <div class="choose-us-overlay" data-aos="flip-up" data-aos-delay="400">
+                        <span class="material-icons">schedule</span>
+                        <div class="choose-overlay-head">Working Hours</div>
+                        <div class="choose-overlay-time">
+                            <p>Mon-Fri</p>
+                            <span>10AM-6PM</span>
+                        </div>
+                        <div class="choose-overlay-time">
+                            <p>Sat</p>
+                            <span>10AM-5PM</span>
+                        </div>
+                        <div class="choose-overlay-time">
+                            <p>Sun</p>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-us-content">
+                    <div class="section-header">
+                        <div class="chips dark-chips"><span class="material-icons">bloodtype</span>Why Choose Us</div>
+                        <h1 class="sec-head">Setting benchmarks laboratory research <span class="text-gradient"> & data
+                                accuracy</span></h1>
+                        <p class="sec-desc">Through precision driven processes, validated protocols, and expert
+                            oversight, our laboratory consistently delivers accurate, reliable, and reproducible
+                            research data.</p>
+                    </div>
+                    <div class="choose-card-con">
+                        <div class="choose-card-grid">
+                            <div class="choose-us-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="choose-icon material-icons">science</div>
+                                <div class="choose-card-content">
+                                    <h3> Experienced Scientific Team</h3>
+                                    <p>Our team of certified researcher & laboratory professionals brings expertise.</p>
+                                </div>
+                            </div>
+                            <div class="choose-us-card" data-aos="fade-down" data-aos-delay="4500">
+                                <div class="choose-icon material-icons">my_location</div>
+                                <div class="choose-card-content">
+                                    <h3> Accuracy & Data Integrity</h3>
+                                    <p>Our laboratory follows validated protocols, advanced instrumentation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/lab1.webp" alt="Lab" loading="lazy" class="reveal-image">
+                    </div>
+                    <div class="choose-actions" data-aos="flip-up" data-aos-delay="500">
+                        <a href="404page.html" class="btn btn-primary">Learn More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="case-study">
+        <div class="container">
+            <div class="case-study-grid">
+                <div class="case-study-left case-stick">
+                    <div class="section-header">
+                        <div class="chips dark-chips"><span class="material-icons">bloodtype</span>View Case Study</div>
+                        <h1 class="sec-head">Validated results from trusted <span class="text-gradient"> laboratory
+                                research</span></h1>
+                        <a href="404page.html" class="btn-gradient">View All Studies</a>
+                    </div>
+                    <div class="case-partner" data-aos="flip-up" data-aos-delay="400">
+                        <div class="case-glass-content">
+                            <div class="hero-avatars">
+                                <img src="./assets/doc1.webp" alt="Doctor">
+                                <img src="./assets/doc2.webp" alt="Doctor">
+                                <img src="./assets/doc3.webp" alt="Doctor">
+                                <img src="./assets/doc4.webp" alt="Doctor">
+                            </div>
+                            <div class="case-avatars-content">
+                                <h3>Global Research Partners</h3>
+                                <p>Collaborating with leading university, <br> and industry innovators worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-study-right">
+                    <div class="case-study-card-con">
+                        <div class="case-study-card" data-aos="fade-down" data-aos-delay="400">
+                            <img src="./assets/lab1.webp" alt="Lab" loading="lazy">
+                            <div class="case-text">
+                                <h3>Biotech</h3>
+                                <h2>Clinical Biomarker Analysis</h2>
+                            </div>
+                        </div>
+                        <div class="case-study-card" data-aos="fade-up" data-aos-delay="500">
+                            <img src="./assets/lab1.webp" alt="Lab" loading="lazy">
+                            <div class="case-text">
+                                <h3>Biotech</h3>
+                                <h2>Clinical Biomarker Analysis</h2>
+                            </div>
+                        </div>
+                        <div class="case-study-card" data-aos="fade-down" data-aos-delay="600">
+                            <img src="./assets/lab1.webp" alt="Lab" loading="lazy">
+                            <div class="case-text">
+                                <h3>Biotech</h3>
+                                <h2>Clinical Biomarker Analysis</h2>
+                            </div>
+                        </div>
+                        <div class="case-study-card" data-aos="fade-up" data-aos-delay="600">
+                            <img src="./assets/lab1.webp" alt="Lab" loading="lazy">
+                            <div class="case-text">
+                                <h3>Biotech</h3>
+                                <h2>Clinical Biomarker Analysis</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <h1 class="video-title">See How <span class="text-gradient">We Work</span></h1>
+            <a href="404page.html" class="play-btn-pulse">
+                <span class="material-icons">play_arrow</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="appointment">
+        <div class="appoint-container">
+            <div class="appoint-grid">
+                <div class="appoint-left">
+                    <div class="section-header">
+                        <div class="chips dark-chips">
+                            <span class="material-icons">event_available</span>
+                            Book an appointment
+                        </div>
+                        <h1 class="sec-head">Connect with experts for <br><span class="text-gradient">Reliable
+                                Solutions</span></h1>
+                        <p class="sec-desc">Get in touch with our scientific experts for reliable laboratory services
+                            backed by precision, quality standards, and proven expertise.</p>
+                    </div>
+
+                    <div class="appoint-feature-grid">
+                        <div class="appoint-card" data-aos="fade-up">
+                            <div class="icon-box">
+                                <span class="material-icons">calendar_today</span>
+                            </div>
+                            <div class="appoint-text">
+                                <h2>Easy Scheduling</h2>
+                                <p>Book quickly through our online form or direct call.</p>
+                            </div>
+                        </div>
+
+                        <div class="appoint-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon-box">
+                                <span class="material-icons">biotech</span>
+                            </div>
+                            <div class="appoint-text">
+                                <h2>Expert Analysis</h2>
+                                <p>Get results analyzed by senior certified pathologists.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="404page.html" class="btn-gradient main-cta">Book Appointment Now</a>
+                </div>
+
+                <div class="appoint-right">
+                    <div class="image-wrapper">
+                        <img src="./assets/appoint.webp" alt="Doctors" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="multi-testimonial-section">
+        <div class="container">
             <div class="section-header">
-                <div class="chips dark-chips" style="margin: 0 auto 24px auto;"><span
-                        class="material-icons">public</span>
-                    Global Reach</div>
-                <h3 class="sec-head">Operating worldwide to support your <span class="text-gradient"> multi-site
-                        clinical trials.</span></h3>
-            </div>
-            <div class="network-stats">
-                <div class="stat" data-aos="flip-down">
-                    <h2 class="text-gradient">14+</h2>
-                    <p>Countries Served</p>
-                </div>
-                <div class="stat" data-aos="flip-up">
-                    <h2 class="text-gradient">3</h2>
-                    <p>Processing Hubs</p>
-                </div>
-                <div class="stat" data-aos="flip-down">
-                    <h2 class="text-gradient">24/7</h2>
-                    <p>Sample Tracking</p>
+                <div class="chips dark-chips"><span class="material-icons">bloodtype</span>Our Testimonial</div>
+                <h1 class="sec-head">Sharing stories of precision, quality,<span class="text-gradient"> &
+                        research</span></h1>
+                <div class="sec-desc">Discover how our commitment to accuracy, scientific integrity, and innovative
+                    research has delivered exceptional results for clients worldwide.
+
                 </div>
             </div>
-        </div>
+            <div class="carousel-viewport" id="multi-carousel">
+                <div class="carousel-track" id="multi-track">
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"Their analytical precision and compliance-focused approach make them a
+                            trusted partner for pharmaceutical testing. We value their consistency."</p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>James Whitmore</h4>
+                                <p>Quality Control Head</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc1.webp" alt="James Whitmore">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"From sample submission to final analysis, process was transparent &
+                            efficient. The quality of results supported key decisions in our product development cycle."
+                        </p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>Sofia Martinez</h4>
+                                <p>R&D Manager</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc2.webp" alt="Sofia Martinez">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"Their scalable lab infrastructure handles our genomic sequencing
+                            effortlessly. The seamless integration into our workflow was outstanding."</p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>Jonathan Brooks</h4>
+                                <p>Product Lead</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc3.webp" alt="Jonathan Brooks">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"Their analytical precision and compliance-focused approach make them a
+                            trusted partner for pharmaceutical testing. We value their consistency."</p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>James Whitmore</h4>
+                                <p>Quality Control Head</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc1.webp" alt="James Whitmore">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"From sample submission to final analysis, process was transparent &
+                            efficient. The quality of results supported key decisions in our product development cycle."
+                        </p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>Sofia Martinez</h4>
+                                <p>R&D Manager</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc2.webp" alt="Sofia Martinez">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span><span class="material-icons">star</span><span
+                                class="material-icons">star</span>
+                        </div>
+                        <p class="review-text">"Their scalable lab infrastructure handles our genomic sequencing
+                            effortlessly. The seamless integration into our workflow was outstanding."</p>
+
+                        <hr class="review-divider">
+
+                        <div class="review-footer">
+                            <div class="author-details">
+                                <h4>Jonathan Brooks</h4>
+                                <p>Product Lead</p>
+                            </div>
+                            <div class="author-visuals">
+                                <img src="./assets/doc3.webp" alt="Jonathan Brooks">
+                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
     </section>
     <section class="faq-section">
         <div class="faq-container">
@@ -369,68 +785,52 @@
         });
     </script>
     <script>
+        const progressBars = document.querySelectorAll('.bar-fill');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
 
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
 
+        progressBars.forEach(bar => {
+            observer.observe(bar);
+        });
         document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('clinical-contact-form');
-            const statusMessage = document.getElementById('form-status');
+            const track = document.getElementById('multi-track');
+            const cards = track.children;
 
-            const inputs = {
-                name: document.getElementById('fullName'),
-                email: document.getElementById('workEmail'),
-                company: document.getElementById('company'),
-                type: document.getElementById('inquiryType'),
-                message: document.getElementById('message')
-            };
+            const autoSlideInterval = 2000;
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let currentIndex = 0;
+            let timer;
 
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                Object.values(inputs).forEach(input => input.classList.remove('input-error', 'input-success'));
-                statusMessage.className = 'form-status-message';
-
-                let hasError = false;
-                let errorMessage = '';
-
-                Object.values(inputs).forEach(input => {
-                    if (!input.value.trim()) {
-                        input.classList.add('input-error');
-                        hasError = true;
-                        errorMessage = 'Please fill out all required fields.';
-                    } else {
-                        input.classList.add('input-success');
-                    }
-                });
-
-                if (inputs.email.value.trim() && !emailRegex.test(inputs.email.value.trim())) {
-                    inputs.email.classList.add('input-error');
-                    inputs.email.classList.remove('input-success');
-                    hasError = true;
-                    errorMessage = 'Please enter a valid work email address.';
+            function moveToNextSlide() {
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const gap = 24;
+                const totalMoveDistance = cardWidth + gap;
+                const viewportWidth = document.getElementById('multi-carousel').offsetWidth;
+                const visibleCards = Math.floor(viewportWidth / totalMoveDistance) || 1;
+                currentIndex++;
+                if (currentIndex > cards.length - visibleCards) {
+                    currentIndex = 0;
                 }
+                track.style.transform = `translateX(-${currentIndex * totalMoveDistance}px)`;
+            }
 
-                if (hasError) {
-                    statusMessage.textContent = errorMessage;
-                    statusMessage.classList.add('error', 'visible');
-                } else {
-                    window.location.href = '404page.html'
-                    statusMessage.classList.add('success', 'visible');
+            function startCarousel() {
+                timer = setInterval(moveToNextSlide, autoSlideInterval);
+            }
 
-                    setTimeout(() => {
-                        form.reset();
-                        Object.values(inputs).forEach(input => input.classList.remove('input-success'));
-                        statusMessage.classList.remove('visible');
-                    }, 4000);
-                }
-            });
+            track.addEventListener('mouseenter', () => clearInterval(timer));
+            track.addEventListener('mouseleave', startCarousel);
 
-            Object.values(inputs).forEach(input => {
-                input.addEventListener('input', () => {
-                    input.classList.remove('input-error');
-                    statusMessage.classList.remove('visible');
-                });
-            });
+            startCarousel();
         });
         document.addEventListener('DOMContentLoaded', () => {
             const faqItems = document.querySelectorAll('.faq-item');

@@ -1,366 +1,457 @@
- .contact-section {
-     padding: 100px var(--space-md);
-     background-color: var(--bg-dark);
-     color: var(--text-light);
-     display: flex;
-     justify-content: center;
-     position: relative;
- }
+<!DOCTYPE html>
+<html lang="en">
 
- .contact-container {
-     width: 100%;
-     max-width: 1280px;
-     display: grid;
-     grid-template-columns: 1fr 1.2fr;
-     gap: 80px;
-     align-items: flex-start;
- }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About || BioTechnology</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="shared.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
- .contact-title {
-     font-size: clamp(2rem, 3.5vw, 3rem);
-     line-height: 1.2;
-     margin-bottom: 24px;
- }
+</head>
 
- .contact-subtitle {
-     color: #94A3B8;
-     font-size: 1.1rem;
-     margin-bottom: 48px;
-     line-height: 1.6;
- }
+<body>
+    <header id="header" class="reveal-section">
+        <div class="header-cls">
+            <a href="index.html" class="head-logo">
+                <img src="./assets/stackly-cyan-grad-orig.webp" alt="Logo" class="logo reveal-image">
+            </a>
+            <nav class="nav-links" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html" class="nav-active">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
+                <div class="nav-actions mob-view">
+                    <a href="login.html" class="btn btn-gradient">Login</a>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-gradient">Login</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </header>
+    <section class="sub-hero">
+        <div class="sub-hero-bg"></div>
+        <div class="sub-hero-content">
+            <div class="chips dark-chips">
+                <span class="material-icons">mail</span> Contact Us
+            </div>
+            <h1 class="sec-head">Partner with our <span class="text-gradient">clinical experts</span></h1>
+            <p class="sec-desc">Reach out to discuss your specific clinical requirements, request an audit, or initiate
+                a new research
+                partnership.</p>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
 
- .info-blocks {
-     display: flex;
-     flex-direction: column;
-     gap: 32px;
-     margin-bottom: 48px;
- }
+            <div class="contact-info scroll-reveal" style="--delay: 0.1s;">
+                <h2 class="contact-title sec-head">Get in touch with our <br><span class="text-gradient">laboratory
+                        team</span>
+                </h2>
+                <p class="contact-subtitle sec-desc">Whether you are initiating a clinical trial or requesting an audit,
+                    our
+                    specialists are ready to assist.</p>
 
- .info-item {
-     display: flex;
-     gap: 20px;
-     align-items: flex-start;
- }
+                <div class="info-blocks">
+                    <div class="info-item" data-aos="flip-up" data-aos-delay="200">
+                        <div class="info-icon"><span class="material-icons">biotech</span></div>
+                        <div class="info-text">
+                            <h4>Clinical Partnerships</h4>
+                            <a href="404page.html">partners@thestackly.com</a>
+                            <a href="404page.html">+91 9876543210</a>
+                        </div>
+                    </div>
 
- .info-icon {
-     width: 48px;
-     height: 48px;
-     background: rgba(0, 212, 255, 0.05);
-     border: 1px solid rgba(0, 212, 255, 0.2);
-     border-radius: 12px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: var(--cyan-bright);
- }
+                    <div class="info-item" data-aos="flip-up" data-aos-delay="300">
+                        <div class="info-icon"><span class="material-icons">help_outline</span></div>
+                        <div class="info-text">
+                            <h4>General Inquiries</h4>
+                            <a href="404page.html">info@thestackly.com</a>
+                            <a href="404page.html">+91 9876543210</a>
+                        </div>
+                    </div>
 
- .info-text h4 {
-     margin: 0 0 8px 0;
-     font-size: 1.1rem;
-     color: #F8FAFC;
- }
+                    <div class="info-item" data-aos="flip-up" data-aos-delay="400">
+                        <div class="info-icon"><span class="material-icons">location_on</span></div>
+                        <div class="info-text">
+                            <h4>Main Headquarters</h4>
+                            <p>Stackly Phase 1<br>Salem, TN 636001</p>
+                            <a href="404page.html" class="text-link">View on Maps <span
+                                    class="material-icons">arrow_forward</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
- .info-text a,
- .info-text p {
-     display: block;
-     color: #94A3B8;
-     text-decoration: none;
-     margin-bottom: 4px;
-     transition: color 0.3s ease;
- }
+            <div class="contact-form-wrapper glass-card scroll-reveal" style="--delay: 0.3s;">
+                <form id="clinical-contact-form" class="clinical-form" novalidate>
 
- .info-text a:hover {
-     color: var(--cyan-bright);
- }
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" placeholder="Dr. Jane Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="workEmail">Work Email *</label>
+                            <input type="email" id="workEmail" placeholder="jane@institution.edu" required>
+                        </div>
+                    </div>
 
- .text-link {
-     display: inline-flex;
-     align-items: center;
-     gap: 4px;
-     color: var(--cyan-bright) !important;
-     font-weight: 600;
-     margin-top: 8px;
- }
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="company">Institution / Company *</label>
+                            <input type="text" id="company" placeholder="Apex Therapeutics" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="inquiryType">Inquiry Type *</label>
+                            <select id="inquiryType" required>
+                                <option value="" disabled selected>Select an option...</option>
+                                <option value="biomarker">Biomarker Analysis</option>
+                                <option value="genomic">Genomic Sequencing</option>
+                                <option value="audit">Regulatory Audit</option>
+                                <option value="investor">Investor Relations</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
 
- .text-link .material-icons {
-     font-size: 1.1rem;
- }
+                    <div class="input-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" rows="5"
+                            placeholder="Please provide high-level details about your timeline and assay requirements..."
+                            required></textarea>
+                    </div>
 
- .trust-banner {
-     display: flex;
-     gap: 16px;
-     background: rgba(16, 185, 129, 0.05);
-     border: 1px solid rgba(16, 185, 129, 0.2);
-     padding: 24px;
-     border-radius: 12px;
-     color: #A7F3D0;
- }
+                    <button type="submit" class="btn-gradient submit-btn">Send Secure Message <span
+                            class="material-icons">send</span></button>
 
- .trust-lock {
-     color: var(--green-accent);
- }
+                    <div id="form-status" class="form-status-message"></div>
+                </form>
+            </div>
 
- .trust-banner p {
-     margin: 0;
-     font-size: 0.9rem;
-     line-height: 1.5;
- }
+        </div>
+    </section>
+    <section class="location">
+        <div class="section-header">
+            <div class="chips"><span class="material-icons">bloodtype</span> Our Location</div>
+            <h1 class="sec-head">Find our laboratory
+                <span class="text-gradient"> Location</span>
+            </h1>
+            <div class="sec-desc">
+                Get in touch with GymPro to learn more about our programs, memberships, and training options. Our team
+                is here to answer your questions and help you take first step
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770783!2d78.17140487459903!3d11.68295658852636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1773656950877!5m2!1sen!2sin"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="global-network-section">
+        <div class="network-container text-center scroll-reveal">
+            <div class="section-header">
+                <div class="chips dark-chips" style="margin: 0 auto 24px auto;"><span
+                        class="material-icons">public</span>
+                    Global Reach</div>
+                <h3 class="sec-head">Operating worldwide to support your <span class="text-gradient"> multi-site
+                        clinical trials.</span></h3>
+            </div>
+            <div class="network-stats">
+                <div class="stat" data-aos="flip-down">
+                    <h2 class="text-gradient">14+</h2>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat" data-aos="flip-up">
+                    <h2 class="text-gradient">3</h2>
+                    <p>Processing Hubs</p>
+                </div>
+                <div class="stat" data-aos="flip-down">
+                    <h2 class="text-gradient">24/7</h2>
+                    <p>Sample Tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <div class="chips dark-chips"><span class="material-icons">help_outline</span> Need Answers?</div>
+                <h1 class="sec-head">Frequently Asked <span class="text-gradient">Questions</span></h1>
+                <p class="sec-desc">Clear, transparent information about our lab processes and compliance standards.</p>
+            </div>
 
- .contact-form-wrapper {
-     padding: 48px;
-     background: rgba(255, 255, 255, 0.02);
- }
+            <div class="faq-accordion">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>What is your turnaround time for clinical biomarker analysis?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Our standard turnaround time is 5-7 business days from sample receipt. However, expedited
+                                processing is available for urgent clinical trials depending on the assay complexity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
- .form-row {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     gap: 24px;
- }
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>How do you ensure data security and HIPAA compliance?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>All data is encrypted end-to-end using AES-256 protocols. Our lab infrastructure and
+                                software are fully HIPAA and GDPR compliant, subjected to routine third-party security
+                                audits.</p>
+                        </div>
+                    </div>
+                </div>
 
- .input-group {
-     display: flex;
-     flex-direction: column;
-     margin-bottom: 24px;
- }
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Can your facility handle high-throughput genomic sequencing?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Yes. We operate state-of-the-art automated sequencing platforms capable of processing
+                                thousands of samples weekly without compromising analytical precision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>What is your turnaround time for clinical biomarker analysis?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Our standard turnaround time is 5-7 business days from sample receipt. However, expedited
+                                processing is available for urgent clinical trials depending on the assay complexity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
- .input-group label {
-     font-size: 0.85rem;
-     color: #94A3B8;
-     margin-bottom: 8px;
-     font-weight: 600;
-     text-transform: uppercase;
-     letter-spacing: 0.05em;
- }
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>How do you ensure data security and HIPAA compliance?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>All data is encrypted end-to-end using AES-256 protocols. Our lab infrastructure and
+                                software are fully HIPAA and GDPR compliant, subjected to routine third-party security
+                                audits.</p>
+                        </div>
+                    </div>
+                </div>
 
- .clinical-form {
-     padding: 14px;
- }
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Can your facility handle high-throughput genomic sequencing?</span>
+                        <span class="material-icons faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer-wrapper">
+                        <div class="faq-answer">
+                            <p>Yes. We operate state-of-the-art automated sequencing platforms capable of processing
+                                thousands of samples weekly without compromising analytical precision.</p>
+                        </div>
+                    </div>
+                </div>
 
- .clinical-form input,
- .clinical-form select,
- .clinical-form textarea {
-     width: 100%;
-     background: rgba(255, 255, 255, 0.03);
-     border: 1px solid rgba(255, 255, 255, 0.1);
-     color: var(--text-light);
-     padding: 16px;
-     border-radius: 8px;
-     font-family: inherit;
-     font-size: 1rem;
-     transition: all 0.3s ease;
-     outline: none;
- }
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta-grid-bg"></div>
 
- .clinical-form select {
-     appearance: none;
-     /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2300D4FF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); */
-     background-repeat: no-repeat;
-     background-position: right 16px top 50%;
-     background-size: 12px auto;
- }
+        <div class="cta-glass-box" data-aos="fade-down">
+            <div class="chips dark-chips"><span class="material-icons">biotech</span> Start Your Research</div>
+            <h2 class="sec-head">Accelerate your clinical <span class="text-gradient">breakthroughs</span></h2>
+            <p class="sec-desc">Partner with a laboratory that prioritizes precision, speed, and strict regulatory
+                compliance from sample
+                to final data.</p>
 
- .clinical-form select option {
-     background: var(--bg-dark);
- }
+            <div class="cta-buttons">
+                <a href="404page.html" class="btn-gradient">Request a Consultation</a>
+                <a href="404page.html" class="btn-outline">Download Lab Specs</a>
+            </div>
+        </div>
+    </section>
 
- .clinical-form input:focus,
- .clinical-form select:focus,
- .clinical-form textarea:focus {
-     border-color: var(--cyan-bright);
-     box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
-     background: rgba(0, 212, 255, 0.02);
- }
+    <footer class="biotech-footer">
+        <div class="footer-container">
 
- .submit-btn {
-     width: 100%;
-     padding: 16px;
-     font-size: 1.1rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 12px;
-     border: none;
-     cursor: pointer;
- }
+            <div class="footer-grid">
 
- .input-error {
-     border-color: #EF4444 !important;
-     box-shadow: 0 0 10px rgba(239, 68, 68, 0.2) !important;
- }
+                <div class="footer-brand" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./assets/stackly-cyan-grad-orig.webp" alt="Logo" class="logo">
+                    <p>Next-generation laboratory services and precision biomarker analysis for innovators worldwide.
+                    </p>
+                    <div class="social-links">
+                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="500">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
- .input-success {
-     border-color: var(--green-accent) !important;
- }
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="404page.html">Genomic Sequencing</a></li>
+                        <li><a href="404page.html">Biomarker Analysis</a></li>
+                        <li><a href="404page.html">Assay Development</a></li>
+                        <li><a href="404page.html">Data Bioinformatics</a></li>
+                    </ul>
+                </div>
 
- .form-status-message {
-     margin-top: 16px;
-     font-size: 0.9rem;
-     text-align: center;
-     opacity: 0;
-     transition: opacity 0.3s ease;
-     min-height: 20px;
- }
+                <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="600">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest peer-reviewed research and regulatory news delivered to your inbox.</p>
 
- .form-status-message.visible {
-     opacity: 1;
- }
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <input type="email" id="email-input" placeholder="Work email address" required>
+                        <button type="submit" class="btn-submit"><span
+                                class="material-icons">arrow_forward</span></button>
+                    </form>
 
- .form-status-message.error {
-     color: #EF4444;
- }
+                    <div id="form-message" class="form-message"></div>
+                </div>
 
- .form-status-message.success {
-     color: var(--green-accent);
- }
+            </div>
 
- .global-network-section {
-     padding: 80px 20px;
-     border-top: 1px solid rgba(255, 255, 255, 0.05);
- }
+            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                    <a href="404page.html">HIPAA Compliance</a>
+                </div>
+            </div>
 
- .network-stats {
-     display: flex;
-     justify-content: center;
-     gap: 80px;
-     margin-top: 48px;
- }
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            // offset: 100
+        });
+    </script>
+    <script>
 
- .stat h2 {
-     font-size: 3.5rem;
-     margin: 0;
- }
 
- .stat p {
-     color: #94A3B8;
-     text-transform: uppercase;
-     letter-spacing: 0.05em;
-     font-size: 0.9rem;
-     margin-top: 8px;
- }
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('clinical-contact-form');
+            const statusMessage = document.getElementById('form-status');
 
- @media (max-width: 992px) {
-     .contact-container {
-         grid-template-columns: 1fr;
-         gap: 48px;
-     }
+            const inputs = {
+                name: document.getElementById('fullName'),
+                email: document.getElementById('workEmail'),
+                company: document.getElementById('company'),
+                type: document.getElementById('inquiryType'),
+                message: document.getElementById('message')
+            };
 
-     .form-row {
-         grid-template-columns: 1fr;
-         gap: 0;
-     }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-     .contact-form-wrapper {
-         padding: 32px 24px;
-     }
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                Object.values(inputs).forEach(input => input.classList.remove('input-error', 'input-success'));
+                statusMessage.className = 'form-status-message';
 
-     .network-stats {
-         flex-direction: column;
-         gap: 32px;
-         align-items: center;
-     }
- }
+                let hasError = false;
+                let errorMessage = '';
 
- .location {
-     padding: 10px;
- }
+                Object.values(inputs).forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('input-error');
+                        hasError = true;
+                        errorMessage = 'Please fill out all required fields.';
+                    } else {
+                        input.classList.add('input-success');
+                    }
+                });
 
- .location iframe {
-     width: 100%;
-     margin-top: 50px;
-     border: var(--border-dotted-green);
-     border-radius: 20px;
- }
+                if (inputs.email.value.trim() && !emailRegex.test(inputs.email.value.trim())) {
+                    inputs.email.classList.add('input-error');
+                    inputs.email.classList.remove('input-success');
+                    hasError = true;
+                    errorMessage = 'Please enter a valid work email address.';
+                }
 
- .faq-section {
-     padding: var(--space-xl) var(--space-md);
-     background-color: #F8FAFC;
-     display: flex;
-     justify-content: center;
- }
+                if (hasError) {
+                    statusMessage.textContent = errorMessage;
+                    statusMessage.classList.add('error', 'visible');
+                } else {
+                    window.location.href = '404page.html'
+                    statusMessage.classList.add('success', 'visible');
 
- .faq-container {
-     width: 100%;
-     max-width: 800px;
- }
+                    setTimeout(() => {
+                        form.reset();
+                        Object.values(inputs).forEach(input => input.classList.remove('input-success'));
+                        statusMessage.classList.remove('visible');
+                    }, 4000);
+                }
+            });
 
- .faq-header {
-     text-align: center;
-     margin-bottom: var(--space-xl);
- }
+            Object.values(inputs).forEach(input => {
+                input.addEventListener('input', () => {
+                    input.classList.remove('input-error');
+                    statusMessage.classList.remove('visible');
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
 
- .faq-header p {
-     color: #64748B;
-     font-size: 1.1rem;
-     margin-top: var(--space-sm);
- }
+            faqItems.forEach(item => {
+                const questionButton = item.querySelector('.faq-question');
 
- .faq-accordion {
-     display: flex;
-     flex-direction: column;
-     gap: 16px;
-     margin-top: 20px;
- }
+                questionButton.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('active');
 
- .faq-item {
-     background: #FFFFFF;
-     border: 1px solid #E2E8F0;
-     border-radius: 12px;
-     overflow: hidden;
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-     transition: box-shadow 0.3s ease, border-color 0.3s ease;
- }
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
 
- .faq-item:hover {
-     border-color: rgba(0, 212, 255, 0.3);
-     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
- }
+                    if (!isOpen) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 
- .faq-question {
-     width: 100%;
-     background: transparent;
-     border: none;
-     padding: 24px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     text-align: left;
-     font-size: 1.1rem;
-     font-weight: 600;
-     color: #0A2540;
-     cursor: pointer;
-     font-family: inherit;
- }
-
- .faq-icon {
-     color: #00B4D8;
-     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
- }
-
- .faq-answer-wrapper {
-     display: grid;
-     grid-template-rows: 0fr;
-     transition: grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1);
- }
-
- .faq-answer {
-     overflow: hidden;
- }
-
- .faq-answer p {
-     padding: 0 24px 24px 24px;
-     margin: 0;
-     color: #475569;
-     line-height: 1.6;
- }
-
- .faq-item.active .faq-answer-wrapper {
-     grid-template-rows: 1fr;
- }
-
- .faq-item.active .faq-icon {
-     transform: rotate(180deg);
- }
-
- .faq-item.active {
-     border-color: #00B4D8;
- }
+</html>

@@ -1,631 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About || BioTechnology</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="shared.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-
-<body>
-    <header id="header" class="reveal-section">
-        <div class="header-cls">
-            <a href="index.html" class="head-logo">
-                <img src="./assets/stackly-cyan-grad-orig.webp" alt="Logo" class="logo reveal-image">
-            </a>
-            <nav class="nav-links" id="navMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="nav-active">About</a>
-                <a href="services.html">Service</a>
-                <a href="contact.html">Contact</a>
-                <div class="close-btn material-icons" id="closeMenu">close</div>
-                <div class="nav-actions mob-view">
-                    <a href="login.html" class="btn btn-gradient">Login</a>
-                </div>
-            </nav>
-            <div class="nav-actions">
-                <a href="login.html" class="btn btn-gradient">Login</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="material-icons">menu</span>
-            </div>
-        </div>
-    </header>
-    <section class="sub-hero">
-        <div class="sub-hero-bg"></div>
-
-        <div class="sub-hero-content">
-            <div class="chips dark-chips">
-                <span class="material-icons">biotech</span>
-                <span>About Our Lab</span>
-            </div>
-
-            <h1>Advancing science through <br> <span class="text-gradient">precision analysis</span></h1>
-
-            <p>We combine state-of-the-art technology with rigorous regulatory compliance to accelerate your clinical
-                breakthroughs.</p>
-        </div>
-    </section>
-    <section class="mission-vision-section">
-        <div class="mv-container">
-
-            <div class="section-header scroll-reveal">
-                <div class="chips dark-chips"><span class="material-icons">track_changes</span> Our Purpose</div>
-                <h1 class="sec-head">Driven by Science. <span class="text-gradient">Focused on Life.</span></h1>
-                <p class="sec-desc">We believe that uncompromised data is the foundation of every medical breakthrough.
-                </p>
-            </div>
-
-            <div class="mv-grid">
-
-                <div class="mv-card scroll-reveal" style="--delay: 0.1s;">
-                    <div class="card-accent-line gradient-cyan"></div>
-                    <div class="mv-icon-wrapper"><span class="material-icons">biotech</span></div>
-                    <h3>Our Mission</h3>
-                    <p>To provide researchers with uncompromised analytical precision and scalable laboratory
-                        infrastructure, accelerating the critical path from sample discovery to clinical application.
-                    </p>
-                    <span class="material-icons watermark-icon">biotech</span>
-                </div>
-
-                <div class="mv-card scroll-reveal" style="--delay: 0.3s;">
-                    <div class="card-accent-line gradient-green"></div>
-                    <div class="mv-icon-wrapper"><span class="material-icons">public</span></div>
-                    <h3>Our Vision</h3>
-                    <p>To become the global standard in biomarker analysis, empowering a future where personalized
-                        medicine and targeted therapeutics are safely and rapidly developed for all.</p>
-                    <span class="material-icons watermark-icon">public</span>
-                </div>
-
-                <div class="mv-card scroll-reveal" style="--delay: 0.5s;">
-                    <div class="card-accent-line gradient-blue"></div>
-                    <div class="mv-icon-wrapper"><span class="material-icons">verified_user</span></div>
-                    <h3>Core Values</h3>
-                    <p><strong>Integrity, Precision, and Velocity.</strong> We strictly adhere to global regulatory
-                        standards (HIPAA, ISO) while maintaining the agility required to drive modern biotechnology
-                        forward.</p>
-                    <span class="material-icons watermark-icon">verified_user</span>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="team-section reveal-section">
-        <div class="team-container">
-
-            <div class="section-header scroll-reveal">
-                <div class="chips dark-chips"><span class="material-icons">science</span> Leadership</div>
-                <h1 class="sec-head">Meet the <span class="text-gradient">Scientific Board</span></h1>
-                <p class="sec-desc">Decades of combined expertise in molecular biology, clinical pathology, and
-                    regulatory compliance.
-                </p>
-            </div>
-
-            <div class="team-grid">
-
-                <div class="team-card scroll-reveal" style="--delay: 0.1s;">
-                    <div class="team-image-wrapper">
-                        <img src="./assets/doc1.webp" alt="Dr. Sarah Jenkins" loading="lazy" class="reveal-image">
-
-                        <div class="team-overlay">
-                            <p class="team-bio">Pioneered rapid biomarker identification techniques. Former Head of
-                                Genetics at Apex Medical.</p>
-                            <div class="team-links">
-                                <a href="404page.html" aria-label="Published Research"><span
-                                        class="material-icons">library_books</span></a>
-                                <a href="404page.html" aria-label="Professional Profile"><span
-                                        class="material-icons">link</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-info">
-                        <span class="team-credential">M.D., Ph.D.</span>
-                        <h3>Dr. Sarah Jenkins</h3>
-                        <p>Chief Scientific Officer</p>
-                    </div>
-                </div>
-
-                <div class="team-card scroll-reveal" style="--delay: 0.2s;">
-                    <div class="team-image-wrapper">
-                        <img src="./assets/doc2.webp" alt="Dr. Marcus Thorne" loading="lazy" class="reveal-image">
-                        <div class="team-overlay">
-                            <p class="team-bio">Specializes in high-throughput sequencing and scalable laboratory data
-                                pipelines.</p>
-                            <div class="team-links">
-                                <a href="404page.html"><span class="material-icons">library_books</span></a>
-                                <a href="404page.html"><span class="material-icons">link</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <span class="team-credential">Ph.D.</span>
-                        <h3>Dr. Marcus Thorne</h3>
-                        <p>Director of Bioinformatics</p>
-                    </div>
-                </div>
-
-                <div class="team-card scroll-reveal" style="--delay: 0.3s;">
-                    <div class="team-image-wrapper">
-                        <img src="./assets/doc3.webp" alt="Dr. Elena Rostova" loading="lazy" class="reveal-image">
-                        <div class="team-overlay">
-                            <p class="team-bio">Over 20 years ensuring ISO and HIPAA compliance for global
-                                pharmaceutical clinical trials.</p>
-                            <div class="team-links">
-                                <a href="404page.html"><span class="material-icons">library_books</span></a>
-                                <a href="404page.html"><span class="material-icons">link</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <span class="team-credential">D.Phil.</span>
-                        <h3>Dr. Elena Rostova</h3>
-                        <p>VP of Regulatory Affairs</p>
-                    </div>
-                </div>
-
-                <div class="team-card scroll-reveal" style="--delay: 0.4s;">
-                    <div class="team-image-wrapper">
-                        <img src="./assets/doc4.webp" alt="Dr. James Chen" loading="lazy" class="reveal-image">
-                        <div class="team-overlay">
-                            <p class="team-bio">Lead assay developer. Holds 14 patents in targeted therapeutic
-                                diagnostic tools.</p>
-                            <div class="team-links">
-                                <a href="404page.html"><span class="material-icons">library_books</span></a>
-                                <a href="404page.html"><span class="material-icons">link</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <span class="team-credential">M.S., Ph.D.</span>
-                        <h3>Dr. James Chen</h3>
-                        <p>Head of Assay Development</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="choose-us reveal-section">
-        <div class="container">
-            <div class="choose-us-grid">
-                <div class="choose-us-img" data-aos="fade-up" data-aos-delay="200">
-                    <img src="./assets/choose1.webp" alt="Choose Img" loading="lazy" class="reveal-image">
-                    <div class="choose-us-overlay" data-aos="flip-down" data-aos-delay="300">
-                        <span class="material-icons">schedule</span>
-                        <div class="choose-overlay-head">Working Hours</div>
-                        <div class="choose-overlay-time">
-                            <p>Mon-Fri</p>
-                            <span>10AM-6PM</span>
-                        </div>
-                        <div class="choose-overlay-time">
-                            <p>Sat</p>
-                            <span>10AM-5PM</span>
-                        </div>
-                        <div class="choose-overlay-time">
-                            <p>Sun</p>
-                            <span>Closed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="choose-us-content">
-                    <div class="section-header">
-                        <div class="chips dark-chips"><span class="material-icons">bloodtype</span>Why Choose Us</div>
-                        <h1 class="sec-head">Setting benchmarks laboratory research <span class="text-gradient"> & data
-                                accuracy</span></h1>
-                        <p class="sec-desc">Through precision driven processes, validated protocols, and expert
-                            oversight, our laboratory consistently delivers accurate, reliable, and reproducible
-                            research data.</p>
-                    </div>
-                    <div class="choose-card-con">
-                        <div class="choose-card-grid">
-                            <div class="choose-us-card" data-aos="fade-down">
-                                <div class="choose-icon material-icons">science</div>
-                                <div class="choose-card-content">
-                                    <h3> Experienced Scientific Team</h3>
-                                    <p>Our team of certified researcher & laboratory professionals brings expertise.</p>
-                                </div>
-                            </div>
-                            <div class="choose-us-card" data-aos="fade-up">
-                                <div class="choose-icon material-icons">my_location</div>
-                                <div class="choose-card-content">
-                                    <h3> Accuracy & Data Integrity</h3>
-                                    <p>Our laboratory follows validated protocols, advanced instrumentation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/lab1.webp" alt="Lab" loading="lazy" class="reveal-image">
-                    </div>
-                    <div class="choose-actions" data-aos="flip-up">
-                        <a href="404page.html" class="btn btn-primary">Learn More</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="facility-section reveal-section">
-        <div class="facility-container">
-
-            <div class="facility-visual">
-                <div class=" lab-image-mask" style="--delay: 0.1s;">
-                    <img src="./assets/lab1.webp" alt="Automated Sequencing Lab" loading="lazy" class="reveal-image">
-
-                    <div class="lab-image-overlay"></div>
-                </div>
-            </div>
-
-            <div class="facility-content">
-
-                <div class="chips dark-chips anim-focus" style="--delay: 0.2s;">
-                    <span class="material-icons">architecture</span> Infrastructure
-                </div>
-
-                <h2 class="facility-title">
-                    <span class="text-mask-wrapper">
-                        <span class="anim-text-slide" style="--delay: 0.3s;">State-of-the-Art</span>
-                    </span><br>
-                    <span class="text-mask-wrapper">
-                        <span class="anim-text-slide text-gradient" style="--delay: 0.4s;">Laboratory Setup.</span>
-                    </span>
-                </h2>
-
-                <p class="anim-focus" style="--delay: 0.5s;">
-                    Our 50,000 sq. ft. purpose-built facility integrates robotic automation with AI-driven
-                    bioinformatics. We guarantee zero cross-contamination and unparalleled throughput for your most
-                    critical assays.
-                </p>
-
-                <div class="accreditation-grid">
-
-                    <div class="badge-card glass-card anim-focus" style="--delay: 0.6s;">
-                        <span class="material-icons badge-icon">verified</span>
-                        <div>
-                            <h4>CAP Accredited</h4>
-                            <p>College of American Pathologists</p>
-                        </div>
-                    </div>
-
-                    <div class="badge-card glass-card anim-focus" style="--delay: 0.7s;">
-                        <span class="material-icons badge-icon">health_and_safety</span>
-                        <div>
-                            <h4>CLIA Certified</h4>
-                            <p>Clinical Laboratory Improvement</p>
-                        </div>
-                    </div>
-
-                    <div class="badge-card glass-card anim-focus" style="--delay: 0.8s;">
-                        <span class="material-icons badge-icon">fact_check</span>
-                        <div>
-                            <h4>ISO 15189</h4>
-                            <p>Medical Laboratories Quality</p>
-                        </div>
-                    </div>
-
-                    <div class="badge-card glass-card anim-focus" style="--delay: 0.9s;">
-                        <span class="material-icons badge-icon">science</span>
-                        <div>
-                            <h4>BSL-2 Compliant</h4>
-                            <p>Biosafety Level 2 Cleanrooms</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="multi-testimonial-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="chips dark-chips"><span class="material-icons">bloodtype</span>Our Testimonial</div>
-                <h1 class="sec-head">Sharing stories of precision, quality,<span class="text-gradient"> &
-                        research</span></h1>
-                <div class="sec-desc">Discover how our commitment to accuracy, scientific integrity, and innovative
-                    research has delivered exceptional results for clients worldwide.
-
-                </div>
-            </div>
-            <div class="carousel-viewport" id="multi-carousel">
-                <div class="carousel-track" id="multi-track">
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"Their analytical precision and compliance-focused approach make them a
-                            trusted partner for pharmaceutical testing. We value their consistency."</p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>James Whitmore</h4>
-                                <p>Quality Control Head</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc1.webp" alt="James Whitmore">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"From sample submission to final analysis, process was transparent &
-                            efficient. The quality of results supported key decisions in our product development cycle."
-                        </p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>Sofia Martinez</h4>
-                                <p>R&D Manager</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc2.webp" alt="Sofia Martinez">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"Their scalable lab infrastructure handles our genomic sequencing
-                            effortlessly. The seamless integration into our workflow was outstanding."</p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>Jonathan Brooks</h4>
-                                <p>Product Lead</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc3.webp" alt="Jonathan Brooks">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"Their analytical precision and compliance-focused approach make them a
-                            trusted partner for pharmaceutical testing. We value their consistency."</p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>James Whitmore</h4>
-                                <p>Quality Control Head</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc1.webp" alt="James Whitmore">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"From sample submission to final analysis, process was transparent &
-                            efficient. The quality of results supported key decisions in our product development cycle."
-                        </p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>Sofia Martinez</h4>
-                                <p>R&D Manager</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc2.webp" alt="Sofia Martinez">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="stars">
-                            <span class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span><span class="material-icons">star</span><span
-                                class="material-icons">star</span>
-                        </div>
-                        <p class="review-text">"Their scalable lab infrastructure handles our genomic sequencing
-                            effortlessly. The seamless integration into our workflow was outstanding."</p>
-
-                        <hr class="review-divider">
-
-                        <div class="review-footer">
-                            <div class="author-details">
-                                <h4>Jonathan Brooks</h4>
-                                <p>Product Lead</p>
-                            </div>
-                            <div class="author-visuals">
-                                <img src="./assets/doc3.webp" alt="Jonathan Brooks">
-                                <div class="quote-badge"><span class="material-icons">format_quote</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-    </section>
-    <section class="cta-section">
-        <div class="cta-grid-bg"></div>
-
-        <div class="cta-glass-box" data-aos="fade-down">
-            <div class="chips dark-chips"><span class="material-icons">biotech</span> Start Your Research</div>
-            <h2 class="sec-head">Accelerate your clinical <span class="text-gradient">breakthroughs</span></h2>
-            <p class="sec-desc">Partner with a laboratory that prioritizes precision, speed, and strict regulatory
-                compliance from sample
-                to final data.</p>
-
-            <div class="cta-buttons">
-                <a href="404page.html" class="btn-gradient">Request a Consultation</a>
-                <a href="404page.html" class="btn-outline">Download Lab Specs</a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="biotech-footer">
-        <div class="footer-container">
-
-            <div class="footer-grid">
-
-                <div class="footer-brand" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./assets/stackly-cyan-grad-orig.webp" alt="Logo" class="logo">
-                    <p>Next-generation laboratory services and precision biomarker analysis for innovators worldwide.
-                    </p>
-                    <div class="social-links">
-                        <a href="404page.html"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="404page.html"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links" data-aos="fade-up" data-aos-delay="500">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links" data-aos="fade-up" data-aos-delay="400">
-                    <h4>Solutions</h4>
-                    <ul>
-                        <li><a href="404page.html">Genomic Sequencing</a></li>
-                        <li><a href="404page.html">Biomarker Analysis</a></li>
-                        <li><a href="404page.html">Assay Development</a></li>
-                        <li><a href="404page.html">Data Bioinformatics</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="600">
-                    <h4>Stay Updated</h4>
-                    <p>Get the latest peer-reviewed research and regulatory news delivered to your inbox.</p>
-
-                    <form id="newsletter-form" class="newsletter-form" novalidate>
-                        <input type="email" id="email-input" placeholder="Work email address" required>
-                        <button type="submit" class="btn-submit"><span
-                                class="material-icons">arrow_forward</span></button>
-                    </form>
-
-                    <div id="form-message" class="form-message"></div>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
-                <p>&copy; 2026 Stackly. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="404page.html">Privacy Policy</a>
-                    <a href="404page.html">Terms of Service</a>
-                    <a href="404page.html">HIPAA Compliance</a>
-                </div>
-            </div>
-
-        </div>
-    </footer>
-    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            // offset: 100
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const revealElements = document.querySelectorAll('.scroll-reveal');
-
-            const revealObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            });
-
-            revealElements.forEach(el => revealObserver.observe(el));
-        });
-        document.addEventListener('DOMContentLoaded', () => {
-            const track = document.getElementById('multi-track');
-            const cards = track.children;
-
-            const autoSlideInterval = 2000;
-
-            let currentIndex = 0;
-            let timer;
-
-            function moveToNextSlide() {
-                const cardWidth = cards[0].getBoundingClientRect().width;
-                const gap = 24;
-                const totalMoveDistance = cardWidth + gap;
-
-                const viewportWidth = document.getElementById('multi-carousel').offsetWidth;
-                const visibleCards = Math.floor(viewportWidth / totalMoveDistance) || 1;
-
-                currentIndex++;
-                if (currentIndex > cards.length - visibleCards) {
-                    currentIndex = 0;
-                }
-                track.style.transform = `translateX(-${currentIndex * totalMoveDistance}px)`;
-            }
-
-            function startCarousel() {
-                timer = setInterval(moveToNextSlide, autoSlideInterval);
-            }
-
-            track.addEventListener('mouseenter', () => clearInterval(timer));
-            track.addEventListener('mouseleave', startCarousel);
-
-            startCarousel();
-        });
-    </script>
-</body>
-
-</html>
+ .contact-section {
+     padding: 100px var(--space-md);
+     background-color: var(--bg-dark);
+     color: var(--text-light);
+     display: flex;
+     justify-content: center;
+     position: relative;
+ }
+
+ .contact-container {
+     width: 100%;
+     max-width: 1280px;
+     display: grid;
+     grid-template-columns: 1fr 1.2fr;
+     gap: 80px;
+     align-items: flex-start;
+ }
+
+ .contact-title {
+     font-size: clamp(2rem, 3.5vw, 3rem);
+     line-height: 1.2;
+     margin-bottom: 24px;
+ }
+
+ .contact-subtitle {
+     color: #94A3B8;
+     font-size: 1.1rem;
+     margin-bottom: 48px;
+     line-height: 1.6;
+ }
+
+ .info-blocks {
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
+     margin-bottom: 48px;
+ }
+
+ .info-item {
+     display: flex;
+     gap: 20px;
+     align-items: flex-start;
+ }
+
+ .info-icon {
+     width: 48px;
+     height: 48px;
+     background: rgba(0, 212, 255, 0.05);
+     border: 1px solid rgba(0, 212, 255, 0.2);
+     border-radius: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--cyan-bright);
+ }
+
+ .info-text h4 {
+     margin: 0 0 8px 0;
+     font-size: 1.1rem;
+     color: #F8FAFC;
+ }
+
+ .info-text a,
+ .info-text p {
+     display: block;
+     color: #94A3B8;
+     text-decoration: none;
+     margin-bottom: 4px;
+     transition: color 0.3s ease;
+ }
+
+ .info-text a:hover {
+     color: var(--cyan-bright);
+ }
+
+ .text-link {
+     display: inline-flex;
+     align-items: center;
+     gap: 4px;
+     color: var(--cyan-bright) !important;
+     font-weight: 600;
+     margin-top: 8px;
+ }
+
+ .text-link .material-icons {
+     font-size: 1.1rem;
+ }
+
+ .trust-banner {
+     display: flex;
+     gap: 16px;
+     background: rgba(16, 185, 129, 0.05);
+     border: 1px solid rgba(16, 185, 129, 0.2);
+     padding: 24px;
+     border-radius: 12px;
+     color: #A7F3D0;
+ }
+
+ .trust-lock {
+     color: var(--green-accent);
+ }
+
+ .trust-banner p {
+     margin: 0;
+     font-size: 0.9rem;
+     line-height: 1.5;
+ }
+
+ .contact-form-wrapper {
+     padding: 48px;
+     background: rgba(255, 255, 255, 0.02);
+ }
+
+ .form-row {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 24px;
+ }
+
+ .input-group {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 24px;
+ }
+
+ .input-group label {
+     font-size: 0.85rem;
+     color: #94A3B8;
+     margin-bottom: 8px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+ }
+
+ .clinical-form {
+     padding: 14px;
+ }
+
+ .clinical-form input,
+ .clinical-form select,
+ .clinical-form textarea {
+     width: 100%;
+     background: rgba(255, 255, 255, 0.03);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     color: var(--text-light);
+     padding: 16px;
+     border-radius: 8px;
+     font-family: inherit;
+     font-size: 1rem;
+     transition: all 0.3s ease;
+     outline: none;
+ }
+
+ .clinical-form select {
+     appearance: none;
+     /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2300D4FF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); */
+     background-repeat: no-repeat;
+     background-position: right 16px top 50%;
+     background-size: 12px auto;
+ }
+
+ .clinical-form select option {
+     background: var(--bg-dark);
+ }
+
+ .clinical-form input:focus,
+ .clinical-form select:focus,
+ .clinical-form textarea:focus {
+     border-color: var(--cyan-bright);
+     box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+     background: rgba(0, 212, 255, 0.02);
+ }
+
+ .submit-btn {
+     width: 100%;
+     padding: 16px;
+     font-size: 1.1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 12px;
+     border: none;
+     cursor: pointer;
+ }
+
+ .input-error {
+     border-color: #EF4444 !important;
+     box-shadow: 0 0 10px rgba(239, 68, 68, 0.2) !important;
+ }
+
+ .input-success {
+     border-color: var(--green-accent) !important;
+ }
+
+ .form-status-message {
+     margin-top: 16px;
+     font-size: 0.9rem;
+     text-align: center;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     min-height: 20px;
+ }
+
+ .form-status-message.visible {
+     opacity: 1;
+ }
+
+ .form-status-message.error {
+     color: #EF4444;
+ }
+
+ .form-status-message.success {
+     color: var(--green-accent);
+ }
+
+ .global-network-section {
+     padding: 80px 20px;
+     border-top: 1px solid rgba(255, 255, 255, 0.05);
+ }
+
+ .network-stats {
+     display: flex;
+     justify-content: center;
+     gap: 80px;
+     margin-top: 48px;
+ }
+
+ .stat h2 {
+     font-size: 3.5rem;
+     margin: 0;
+ }
+
+ .stat p {
+     color: #94A3B8;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+     font-size: 0.9rem;
+     margin-top: 8px;
+ }
+
+ @media (max-width: 992px) {
+     .contact-container {
+         grid-template-columns: 1fr;
+         gap: 48px;
+     }
+
+     .form-row {
+         grid-template-columns: 1fr;
+         gap: 0;
+     }
+
+     .contact-form-wrapper {
+         padding: 32px 24px;
+     }
+
+     .network-stats {
+         flex-direction: column;
+         gap: 32px;
+         align-items: center;
+     }
+ }
+
+ .location {
+     padding: 10px;
+ }
+
+ .location iframe {
+     width: 100%;
+     margin-top: 50px;
+     border: var(--border-dotted-green);
+     border-radius: 20px;
+ }
+
+ .faq-section {
+     padding: var(--space-xl) var(--space-md);
+     background-color: #F8FAFC;
+     display: flex;
+     justify-content: center;
+ }
+
+ .faq-container {
+     width: 100%;
+     max-width: 800px;
+ }
+
+ .faq-header {
+     text-align: center;
+     margin-bottom: var(--space-xl);
+ }
+
+ .faq-header p {
+     color: #64748B;
+     font-size: 1.1rem;
+     margin-top: var(--space-sm);
+ }
+
+ .faq-accordion {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+     margin-top: 20px;
+ }
+
+ .faq-item {
+     background: #FFFFFF;
+     border: 1px solid #E2E8F0;
+     border-radius: 12px;
+     overflow: hidden;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+     transition: box-shadow 0.3s ease, border-color 0.3s ease;
+ }
+
+ .faq-item:hover {
+     border-color: rgba(0, 212, 255, 0.3);
+     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ .faq-question {
+     width: 100%;
+     background: transparent;
+     border: none;
+     padding: 24px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: left;
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: #0A2540;
+     cursor: pointer;
+     font-family: inherit;
+ }
+
+ .faq-icon {
+     color: #00B4D8;
+     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+ }
+
+ .faq-answer-wrapper {
+     display: grid;
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+ }
+
+ .faq-answer {
+     overflow: hidden;
+ }
+
+ .faq-answer p {
+     padding: 0 24px 24px 24px;
+     margin: 0;
+     color: #475569;
+     line-height: 1.6;
+ }
+
+ .faq-item.active .faq-answer-wrapper {
+     grid-template-rows: 1fr;
+ }
+
+ .faq-item.active .faq-icon {
+     transform: rotate(180deg);
+ }
+
+ .faq-item.active {
+     border-color: #00B4D8;
+ }

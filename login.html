@@ -1,267 +1,276 @@
-:root {
-    --bg-dark: #020617;
-    --bg-glass: rgba(10, 37, 64, 0.4);
-    --border-glass: 1px solid rgba(255, 255, 255, 0.1);
-    --cyan-bright: #00D4FF;
-    --green-accent: #10B981;
-    --text-light: #F8FAFC;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication || Stackly BioTechnology</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="shared.css">
+</head>
 
-body.auth-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 110vh;
-    /* overflow: hidden; */
-}
+<body class="auth-body">
 
-.back {
-    position: fixed;
-    top: 10px;
-    z-index: 10;
-    left: 10px;
-}
+    <a href="index.html" class="btn btn-primary back">Back to home</a>
+    <div class="auth-bg-glow"></div>
 
-.auth-wrapper {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 500px;
-    padding: 24px;
-}
+    <div class="auth-wrapper">
+        <div class="auth-card">
 
-.auth-card {
-    background: var(--bg-glass);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: var(--border-glass);
-    border-radius: 24px;
-    padding: 48px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-}
+            <div id="login-view" class="auth-view active-view">
+                <div class="auth-header">
+                    <a href="index.html"><img src="./assets/stackly-cyan-grad-orig.webp" alt="logo" class="logo"></a>
+                    <h2>Welcome <span class="text-gradient">Back</span></h2>
+                    <p>Login to access your clinical dashboard</p>
+                </div>
 
-.auth-view {
-    display: none;
-    animation: fadeIn 0.4s ease forwards;
-}
+                <form id="login-form" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="login-role">Login As</label>
+                        <select id="login-role" required>
+                            <option value="researcher">Researcher</option>
+                            <option value="patient">Patient / Subject</option>
+                        </select>
+                    </div>
 
-.auth-view.active-view {
-    display: block;
-}
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="you@institution.edu" required>
+                    </div>
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="********" required minlength="8">
+                    </div>
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+                    <div class="form-options">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <span>Remember Me</span>
+                        </label>
+                        <a href="#" class="text-link" onclick="switchView('forgot-view')">Forgot Password?</a>
+                    </div>
+                    <div class="auth-status-message" id="login-status"></div>
+                    <button type="submit" class="btn-gradient submit-btn">Login Securely</button>
 
-.auth-header {
-    text-align: center;
-    margin-bottom: 32px;
-}
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="#" onclick="switchView('signup-view')">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
 
-.logo-icon {
-    font-size: 3rem;
-    color: var(--cyan-bright);
-    margin-bottom: 16px;
-}
+            <div id="signup-view" class="auth-view">
+                <div class="auth-header">
+                    <a href="index.html"><img src="./assets/stackly-cyan-grad-orig.webp" alt="logo" class="logo"></a>
+                    <h2>Create <span class="text-gradient">New Account</span></h2>
+                    <p>Join the global laboratory network</p>
+                </div>
 
-.auth-header h2 {
-    margin: 0 0 8px 0;
-    font-size: 2rem;
-    color: var(--cyan-bright);
-}
+                <form id="signup-form" class="auth-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" placeholder="Dr.John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-role">Role</label>
+                            <select id="signup-role" required>
+                                <option value="" disabled selected>Select...</option>
+                                <option value="researcher">Researcher</option>
+                                <option value="patient">Patient</option>
+                            </select>
+                        </div>
+                    </div>
 
-.auth-header p {
-    margin: 0;
-    color: #94A3B8;
-    font-size: 0.95rem;
-}
+                    <div class="form-group">
+                        <label for="signup-email">Work Email</label>
+                        <input type="email" id="signup-email" placeholder="jane@institution.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-org">Organization</label>
+                        <input type="text" id="signup-org" placeholder="Apex Therapeutics" required>
+                    </div>
 
-.text-gradient {
-    background: linear-gradient(135deg, var(--cyan-bright) 0%, var(--green-accent) 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" placeholder="Min 8 chars" required
+                                minlength="8">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-confirm">Confirm</label>
+                            <input type="password" id="signup-confirm" placeholder="Repeat password" required>
+                        </div>
+                    </div>
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
+                    <div class="form-options" style="justify-content: flex-start; margin-bottom: 24px;">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="terms-agree" required>
+                            <span>I agree to the <a href="404page.html">Terms</a> & <a href="404page.html">Privacy
+                                    Policy</a></span>
+                        </label>
+                    </div>
+                    <div class="auth-status-message" id="signup-status"></div>
+                    <button type="submit" class="btn-gradient submit-btn">Create Account</button>
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="#" onclick="switchView('login-view')">Login here</a></p>
+                    </div>
+                </form>
+            </div>
 
-.form-group label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #94A3B8;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
+            <div id="forgot-view" class="auth-view">
+                <div class="auth-header">
+                    <span class="material-icons logo-icon">lock_reset</span>
+                    <h2>Reset <span class="text-gradient">Password</span></h2>
+                    <p>Enter your email to receive a secure reset link.</p>
+                </div>
 
-.auth-form input,
-.auth-form select {
-    width: 100%;
-    background: var(--text-light);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--green-accent);
-    padding: 14px 16px;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
-}
+                <form id="forgot-form" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="forgot-email">Registered Email Address</label>
+                        <input type="email" id="forgot-email" placeholder="you@institution.edu" required>
+                    </div>
+                    <div class="auth-status-message" id="forgot-status"></div>
+                    <button type="submit" class="btn-gradient submit-btn">Send Recovery Link</button>
 
-.auth-form input:focus,
-.auth-form select:focus {
-    border-color: var(--cyan-bright);
-    background: rgba(0, 212, 255, 0.02);
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.15);
-}
+                    <div class="auth-footer" style="margin-top: 24px;">
+                        <a href="#" onclick="switchView('login-view')" class="text-link"><span class="material-icons"
+                                style="font-size: 1rem; vertical-align: middle;">arrow_back</span> Back to Login</a>
+                    </div>
+                </form>
+            </div>
 
-.form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 32px;
-    font-size: 0.9rem;
-}
+            <div id="auth-status" class="auth-status-message"></div>
 
-.custom-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    color: #94A3B8;
-}
+        </div>
+    </div>
 
-.custom-checkbox input {
-    flex: 0.3;
-}
+    <script>
+        function switchView(viewId) {
+            document.querySelectorAll('.auth-view').forEach(view => {
+                view.classList.remove('active-view');
+            });
+            document.getElementById(viewId).classList.add('active-view');
+            document.querySelectorAll('.auth-status-message').forEach(box => {
+                box.className = 'auth-status-message';
+                box.textContent = '';
+            });
+            document.querySelectorAll('.input-error').forEach(input => {
+                input.classList.remove('input-error');
+            });
+        }
 
-.text-link,
-.auth-footer a {
-    color: var(--cyan-bright);
-    text-decoration: none;
-    font-weight: 500;
-}
+        document.addEventListener('DOMContentLoaded', () => {
 
-.text-link:hover,
-.auth-footer a:hover {
-    text-decoration: underline;
-}
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-.btn-gradient {
-    width: 100%;
-    padding: 16px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(135deg, var(--cyan-bright), var(--green-accent));
-    color: #020617;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+            function showError(inputElement, statusBoxId, msg) {
+                if (inputElement) inputElement.classList.add('input-error');
+                const statusBox = document.getElementById(statusBoxId);
+                if (statusBox) {
+                    statusBox.textContent = msg;
+                    statusBox.className = 'auth-status-message error visible';
+                }
+            }
 
-.btn-gradient:hover {
-    transform: translateY(-2px);
-}
+            function showSuccess(statusBoxId, msg) {
+                const statusBox = document.getElementById(statusBoxId);
+                if (statusBox) {
+                    statusBox.textContent = msg;
+                    statusBox.className = 'auth-status-message success visible';
+                }
 
-.auth-footer {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 0.9rem;
-    color: #94A3B8;
-}
 
-.input-error {
-    border-color: #EF4444 !important;
-}
+            }
 
-.auth-status-message {
-    margin-top: 16px;
-    font-size: 0.9rem;
-    text-align: center;
-    min-height: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+            document.querySelectorAll('input, select').forEach(input => {
+                input.addEventListener('input', function () {
+                    this.classList.remove('input-error');
+                    const form = this.closest('form');
+                    if (form) {
+                        const statusBox = form.querySelector('.auth-status-message');
+                        if (statusBox) statusBox.classList.remove('visible');
+                    }
+                });
+            });
 
-.auth-status-message.visible {
-    opacity: 1;
-}
+            const loginForm = document.getElementById('login-form');
+            if (loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const email = document.getElementById('login-email');
+                    const password = document.getElementById('login-password');
 
-.auth-status-message.error {
-    color: #EF4444;
-}
+                    if (!email.value || !emailRegex.test(email.value)) {
+                        return showError(email, 'login-status', 'Please enter a valid email address.');
+                    }
+                    if (password.value.length < 8) {
+                        return showError(password, 'login-status', 'Password must be at least 8 characters.');
+                    }
+                    const selectedRole = document.getElementById("login-role").value;
+                    console.log(selectedRole);
+                    if(selectedRole=='researcher'){
+                        window.location.href='researcher-dashboard.html'
+                        sessionStorage.setItem("researcher",email.value)
+                    }
+                    else if(selectedRole=='patient'){
+                        window.location.href='patient-dashboard.html'
+                        sessionStorage.setItem("patient",email.value)
+                    }
+                    else{
+                        window.location.href='404page.html'
+                    }
+                });
+            }
 
-.auth-status-message.success {
-    color: var(--green-accent);
-}
+            const signupForm = document.getElementById('signup-form');
+            if (signupForm) {
+                signupForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('signup-name');
+                    const email = document.getElementById('signup-email');
+                    const role = document.getElementById('signup-role');
+                    const password = document.getElementById('signup-password');
+                    const confirm = document.getElementById('signup-confirm');
+                    const terms = document.getElementById('terms-agree');
 
-@media (max-width: 600px) {
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+                    if (!name.value.trim()) return showError(name, 'signup-status', 'Full name is required.');
+                    if (!role.value) return showError(role, 'signup-status', 'Please select a role.');
+                    if (!emailRegex.test(email.value)) return showError(email, 'signup-status', 'Valid email required.');
 
-    .auth-card {
-        padding: 32px 24px;
-    }
-    body.auth-body {
-        height: auto;
-    }
-}
+                    if (password.value.length < 8) {
+                        return showError(password, 'signup-status', 'Password must be at least 8 characters long.');
+                    }
+                    if (password.value !== confirm.value) {
+                        showError(password, 'signup-status', 'Passwords do not match.');
+                        return showError(confirm, 'signup-status', 'Passwords do not match.');
+                    }
+                    if (!terms.checked) {
+                        return showError(null, 'signup-status', 'You must agree to the Terms & Privacy Policy.');
+                    }
 
-.form-message {
-    font-size: 0.85rem;
-    margin-top: 8px;
-    min-height: 20px;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
+                    window.location.href = '404page.html'
+                });
+            }
 
-.form-message.visible {
-    opacity: 1;
-}
+            const forgotForm = document.getElementById('forgot-form');
+            if (forgotForm) {
+                forgotForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const email = document.getElementById('forgot-email');
 
-.form-message.success {
-    color: var(--cyan-bright);
-}
+                    if (!email.value || !emailRegex.test(email.value)) {
+                        return showError(email, 'forgot-status', 'Please enter a valid registered email.');
+                    }
+                    window.location.href = '404page.html'
+                    email.value = '';
+                });
+            }
+        });
+    </script>
+</body>
 
-.input-success {
-    border-color: var(--cyan-bright) !important;
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
-}
-
-.form-message.error {
-    color: #EF4444;
-}
-
-.input-error {
-    border-color: #EF4444 !important;
-    box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
-}
+</html>
